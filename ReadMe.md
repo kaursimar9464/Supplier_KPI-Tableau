@@ -55,8 +55,9 @@ If the dashboard is published online:
 
 ## Files
 
-- `Procurement_KPI_Dashboard.twbx` – Packaged Tableau dashboard
+- `SupplierKPI.twb` – Packaged Tableau dashboard
 - `README.md` – Project overview and insights
+- `Dashboard.png` - Screenshot of the dashboard
 
 ---
 
