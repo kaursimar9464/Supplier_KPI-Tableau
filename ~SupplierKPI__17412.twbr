@@ -26,7 +26,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='Procurement KPI Analysis Dataset' name='textscan.18vb9xu0ms3mx91almu9015d9xgh'>
-            <connection class='textscan' directory='C:/Users/Owner/Downloads/archive (1)' filename='Procurement KPI Analysis Dataset.csv' password='' server='' />
+            <connection class='textscan' directory='C:/Users/Owner/Downloads/archive (1)' filename='Procurement KPI Analysis Dataset.csv' password='' server='' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.18vb9xu0ms3mx91almu9015d9xgh' name='Procurement KPI Analysis Dataset.csv' table='[Procurement KPI Analysis Dataset#csv]' type='table'>
@@ -835,8 +835,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98130' id='30' param='vert' type-v2='layout-flow' w='98934' x='533' y='935'>
+            <zone h='100000' id='33' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98130' id='32' param='vert' type-v2='layout-flow' w='98934' x='533' y='935'>
                 <zone forceUpdate='true' h='100000' id='27' type-v2='text' w='76267' x='0' y='0'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -992,7 +992,7 @@
       </cards>
       <simple-id uuid='{EB0EDDC1-95D0-4FFD-A436-457323C78037}' />
     </window>
-    <window class='worksheet' maximized='true' name='Cost Savings'>
+    <window class='worksheet' name='Cost Savings'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1076,7 +1076,7 @@
       </cards>
       <simple-id uuid='{032C1CC9-ABEC-4A11-BB26-615110EAAE0A}' />
     </window>
-    <window class='dashboard' name='Dashboard 1'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
       <viewpoints>
         <viewpoint name='Compliance'>
           <zoom type='entire-view' />

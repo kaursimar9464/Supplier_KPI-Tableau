@@ -30,8 +30,8 @@ You can explore the dashboard in two ways:
 
 ### 1. **Open via Tableau Public**
 If the dashboard is published online:
-- Visit: [Tableau Public Link Here](https://public.tableau.com/app/profile/your-profile-name)  
-  *(Replace with actual link once uploaded)*
+- Visit: [Tableau Public Link Here](https://public.tableau.com/app/profile/simarpreet.kaur2948/viz/SupplierKPI_17503640876300/Dashboard1?publish=yes)  
+  
 
 ### 2. **Open Locally via Tableau Desktop**
 - Download the file: `Procurement_KPI_Dashboard.twbx`
