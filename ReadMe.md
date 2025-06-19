@@ -34,7 +34,7 @@ If the dashboard is published online:
   
 
 ### 2. **Open Locally via Tableau Desktop**
-- Download the file: `Procurement_KPI_Dashboard.twbx`
+- Download the file: `SupplierKPI.twb`
 - Open it using **Tableau Desktop** or **Tableau Public Desktop** 
 ## Key Insights
 
