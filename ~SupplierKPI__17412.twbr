@@ -1,0 +1,1096 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0520.1026                               -->
+<workbook original-version='18.1' source-build='2025.1.2 (20251.25.0520.1026)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Procurement KPI Analysis Dataset' inline='true' name='federated.0ri4c151al53er15hzl5v0mgednu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Procurement KPI Analysis Dataset' name='textscan.18vb9xu0ms3mx91almu9015d9xgh'>
+            <connection class='textscan' directory='C:/Users/Owner/Downloads/archive (1)' filename='Procurement KPI Analysis Dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.18vb9xu0ms3mx91almu9015d9xgh' name='Procurement KPI Analysis Dataset.csv' table='[Procurement KPI Analysis Dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='PO_ID' ordinal='0' />
+            <column datatype='string' name='Supplier' ordinal='1' />
+            <column datatype='date' name='Order_Date' ordinal='2' />
+            <column datatype='date' name='Delivery_Date' ordinal='3' />
+            <column datatype='string' name='Item_Category' ordinal='4' />
+            <column datatype='string' name='Order_Status' ordinal='5' />
+            <column datatype='integer' name='Quantity' ordinal='6' />
+            <column datatype='real' name='Unit_Price' ordinal='7' />
+            <column datatype='real' name='Negotiated_Price' ordinal='8' />
+            <column datatype='real' name='Defective_Units' ordinal='9' />
+            <column datatype='string' name='Compliance' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Procurement KPI Analysis Dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PO_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PO_ID]</local-name>
+            <parent-name>[Procurement KPI Analysis Dataset.csv]</parent-name>
+            <remote-alias>PO_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Supplier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Supplier]</local-name>
+            <parent-name>[Procurement KPI Analysis Dataset.csv]</parent-name>
+            <remote-alias>Supplier</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Order_Date]</local-name>
+            <parent-name>[Procurement KPI Analysis Dataset.csv]</parent-name>
+            <remote-alias>Order_Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delivery_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Delivery_Date]</local-name>
+            <parent-name>[Procurement KPI Analysis Dataset.csv]</parent-name>
+            <remote-alias>Delivery_Date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Item_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Item_Category]</local-name>
+            <parent-name>[Procurement KPI Analysis Dataset.csv]</parent-name>
+            <remote-alias>Item_Category</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Order_Status]</local-name>
+            <parent-name>[Procurement KPI Analysis Dataset.csv]</parent-name>
+            <remote-alias>Order_Status</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[Procurement KPI Analysis Dataset.csv]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit_Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Unit_Price]</local-name>
+            <parent-name>[Procurement KPI Analysis Dataset.csv]</parent-name>
+            <remote-alias>Unit_Price</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Negotiated_Price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Negotiated_Price]</local-name>
+            <parent-name>[Procurement KPI Analysis Dataset.csv]</parent-name>
+            <remote-alias>Negotiated_Price</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Defective_Units</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Defective_Units]</local-name>
+            <parent-name>[Procurement KPI Analysis Dataset.csv]</parent-name>
+            <remote-alias>Defective_Units</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Compliance</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Compliance]</local-name>
+            <parent-name>[Procurement KPI Analysis Dataset.csv]</parent-name>
+            <remote-alias>Compliance</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Delivery Time' datatype='integer' name='[Calculation_1225260596267352065]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Delivery_Date] - [Order_Date]' />
+      </column>
+      <column caption='Cost Savings' datatype='real' name='[Calculation_1225260596268498946]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([Unit_Price] - [Negotiated_Price]) * [Quantity]' />
+      </column>
+      <column caption='Defective Units' datatype='real' name='[Defective_Units]' role='measure' type='quantitative' />
+      <column caption='Delivery Date' datatype='date' name='[Delivery_Date]' role='dimension' type='ordinal' />
+      <column caption='Item Category' datatype='string' name='[Item_Category]' role='dimension' type='nominal' />
+      <column caption='Negotiated Price' datatype='real' name='[Negotiated_Price]' role='measure' type='quantitative' />
+      <column caption='Order Date' datatype='date' name='[Order_Date]' role='dimension' type='ordinal' />
+      <column caption='Order Status' datatype='string' name='[Order_Status]' role='dimension' type='nominal' />
+      <column caption='Po Id' datatype='string' name='[PO_ID]' role='dimension' type='nominal' />
+      <column caption='Unit Price' datatype='real' name='[Unit_Price]' role='measure' type='quantitative' />
+      <column caption='Procurement KPI Analysis Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Owner/AppData/Local/Temp/TableauTemp/#TableauTemp_07zqlbl0tf37l51em296h1ld4yn7.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='06/19/2025 06:51:21 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>PO_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PO_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PO_ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Procurement KPI Analysis Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>777</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Supplier</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Supplier]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Supplier</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Procurement KPI Analysis Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Order_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order_Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Procurement KPI Analysis Dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>476</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delivery_Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Delivery_Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delivery_Date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Procurement KPI Analysis Dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>450</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Item_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Item_Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Item_Category</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Procurement KPI Analysis Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Order_Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Order_Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Order_Status</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Procurement KPI Analysis Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Procurement KPI Analysis Dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>623</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Unit_Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Unit_Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Unit_Price</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Procurement KPI Analysis Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>747</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Negotiated_Price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Negotiated_Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Negotiated_Price</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Procurement KPI Analysis Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>752</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Defective_Units</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Defective_Units]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Defective_Units</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Procurement KPI Analysis Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>203</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Compliance</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Compliance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Compliance</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Procurement KPI Analysis Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout common-percentage='1' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' user-set-layout-v2='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='PO_ID' />
+        <field-sort-custom-order field='Supplier' />
+        <field-sort-custom-order field='Order_Date' />
+        <field-sort-custom-order field='Delivery_Date' />
+        <field-sort-custom-order field='Item_Category' />
+        <field-sort-custom-order field='Order_Status' />
+        <field-sort-custom-order field='Quantity' />
+        <field-sort-custom-order field='Unit_Price' />
+        <field-sort-custom-order field='Negotiated_Price' />
+        <field-sort-custom-order field='Defective_Units' />
+        <field-sort-custom-order field='Compliance' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field='Calculation_1225260596267237376' />
+        <field-sort-custom-order field='Calculation_1225260596267352065' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='Procurement KPI Analysis Dataset.csv' id='Procurement KPI Analysis Dataset.csv_744F8229693448F3BAB8BDA4D0103FAF'>
+            <properties context=''>
+              <relation connection='textscan.18vb9xu0ms3mx91almu9015d9xgh' name='Procurement KPI Analysis Dataset.csv' table='[Procurement KPI Analysis Dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='PO_ID' ordinal='0' />
+                  <column datatype='string' name='Supplier' ordinal='1' />
+                  <column datatype='date' name='Order_Date' ordinal='2' />
+                  <column datatype='date' name='Delivery_Date' ordinal='3' />
+                  <column datatype='string' name='Item_Category' ordinal='4' />
+                  <column datatype='string' name='Order_Status' ordinal='5' />
+                  <column datatype='integer' name='Quantity' ordinal='6' />
+                  <column datatype='real' name='Unit_Price' ordinal='7' />
+                  <column datatype='real' name='Negotiated_Price' ordinal='8' />
+                  <column datatype='real' name='Defective_Units' ordinal='9' />
+                  <column datatype='string' name='Compliance' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Compliance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Compliance count by Supplier</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Procurement KPI Analysis Dataset' name='federated.0ri4c151al53er15hzl5v0mgednu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ri4c151al53er15hzl5v0mgednu'>
+            <column datatype='string' name='[Compliance]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Supplier]' role='dimension' type='nominal' />
+            <column-instance column='[Compliance]' derivation='Count' name='[cnt:Compliance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Compliance]' derivation='None' name='[none:Compliance:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier]' derivation='None' name='[none:Supplier:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Supplier:nk]' member='&quot;Alpha_Inc&quot;' />
+              <groupfilter function='member' level='[none:Supplier:nk]' member='&quot;Beta_Supplies&quot;' />
+              <groupfilter function='member' level='[none:Supplier:nk]' member='&quot;Delta_Logistics&quot;' />
+              <groupfilter function='member' level='[none:Supplier:nk]' member='&quot;Epsilon_Group&quot;' />
+              <groupfilter function='member' level='[none:Supplier:nk]' member='&quot;Gamma_Co&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]' value='99' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]' value='Select Supplier'>
+              <formatted-text>
+                <run bold='true' fontsize='12'>Select Supplier</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]' />
+              <text column='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Compliance:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ri4c151al53er15hzl5v0mgednu].[cnt:Compliance:qk]</rows>
+        <cols>([federated.0ri4c151al53er15hzl5v0mgednu].[none:Compliance:nk] / [federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk])</cols>
+      </table>
+      <simple-id uuid='{64C3B62C-22E9-4EA3-80D0-FF37FFC850FA}' />
+    </worksheet>
+    <worksheet name='Cost Savings'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Cost Savings by Supplier</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Procurement KPI Analysis Dataset' name='federated.0ri4c151al53er15hzl5v0mgednu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ri4c151al53er15hzl5v0mgednu'>
+            <column caption='Cost Savings' datatype='real' name='[Calculation_1225260596268498946]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='([Unit_Price] - [Negotiated_Price]) * [Quantity]' />
+            </column>
+            <column caption='Negotiated Price' datatype='real' name='[Negotiated_Price]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Quantity]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Supplier]' role='dimension' type='nominal' />
+            <column caption='Unit Price' datatype='real' name='[Unit_Price]' role='measure' type='quantitative' />
+            <column-instance column='[Supplier]' derivation='None' name='[none:Supplier:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1225260596268498946]' derivation='Sum' name='[sum:Calculation_1225260596268498946:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0ri4c151al53er15hzl5v0mgednu].[sum:Calculation_1225260596268498946:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0ri4c151al53er15hzl5v0mgednu].[sum:Calculation_1225260596268498946:qk]' value=''>
+              <formatted-text />
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0ri4c151al53er15hzl5v0mgednu].[sum:Calculation_1225260596268498946:qk]' />
+              <color column='[federated.0ri4c151al53er15hzl5v0mgednu].[sum:Calculation_1225260596268498946:qk]' />
+              <text column='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]' />
+              <text column='[federated.0ri4c151al53er15hzl5v0mgednu].[sum:Calculation_1225260596268498946:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{56AABC71-33F6-484C-BF24-0F0D61EFC08D}' />
+    </worksheet>
+    <worksheet name='Defective units'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Defective Units by Supplier
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Procurement KPI Analysis Dataset' name='federated.0ri4c151al53er15hzl5v0mgednu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ri4c151al53er15hzl5v0mgednu'>
+            <column caption='Defective Units' datatype='real' name='[Defective_Units]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Supplier]' role='dimension' type='nominal' />
+            <column-instance column='[Defective_Units]' derivation='None' name='[none:Defective_Units:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Supplier]' derivation='None' name='[none:Supplier:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]' value='22' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]' value='230' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Defective_Units:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refboxplot'>
+            <format attr='palette' id='refline0' value='bp_red' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <lod column='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Defective_Units:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Defective_Units:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-color' value='#b07aa1' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-transparency' value='0' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ri4c151al53er15hzl5v0mgednu].[none:Defective_Units:qk]</rows>
+        <cols>[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]</cols>
+      </table>
+      <simple-id uuid='{AFDDCDB8-A62F-461B-92D4-D302F10C9885}' />
+    </worksheet>
+    <worksheet name='Delivery time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average Delivery time by supplier
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Procurement KPI Analysis Dataset' name='federated.0ri4c151al53er15hzl5v0mgednu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ri4c151al53er15hzl5v0mgednu'>
+            <column caption='Delivery Time' datatype='integer' name='[Calculation_1225260596267352065]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Delivery_Date] - [Order_Date]' />
+            </column>
+            <column caption='Delivery Date' datatype='date' name='[Delivery_Date]' role='dimension' type='ordinal' />
+            <column caption='Order Date' datatype='date' name='[Order_Date]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Supplier]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1225260596267352065]' derivation='Avg' name='[avg:Calculation_1225260596267352065:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Supplier]' derivation='None' name='[none:Supplier:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]' value='248' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ri4c151al53er15hzl5v0mgednu].[avg:Calculation_1225260596267352065:qk]</rows>
+        <cols>[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]</cols>
+      </table>
+      <simple-id uuid='{68C5222A-015D-472C-843C-29B57E4F4023}' />
+    </worksheet>
+    <worksheet name='Order Status'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total count of Order Status</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Procurement KPI Analysis Dataset' name='federated.0ri4c151al53er15hzl5v0mgednu' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ri4c151al53er15hzl5v0mgednu'>
+            <column caption='Order Status' datatype='string' name='[Order_Status]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Supplier]' role='dimension' type='nominal' />
+            <column-instance column='[Order_Status]' derivation='Count' name='[cnt:Order_Status:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Order_Status]' derivation='None' name='[none:Order_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Supplier]' derivation='None' name='[none:Supplier:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]' value='152' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Order_Status:nk]' />
+              <text column='[federated.0ri4c151al53er15hzl5v0mgednu].[cnt:Order_Status:qk]' />
+              <text column='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Order_Status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ri4c151al53er15hzl5v0mgednu].[cnt:Order_Status:qk]</rows>
+        <cols>[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]</cols>
+      </table>
+      <simple-id uuid='{F86683DC-F7F1-414B-A8C6-E4CFA57A58D8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='1500' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='28' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='100000' id='27' type-v2='text' w='76267' x='0' y='0'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='100000' id='29' type-v2='text' w='23733' x='76267' y='0'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' underline='true'>Quality:</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000'>Delta_Logistics has the highest defect rate, posing a potential quality risk followed by Beta_supplies with Epsilon_Group and Alpha_Inc to be the lowest.</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' underline='true'>Cost Savings:</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000'>Beta_Supplies and Epsilon_Group contributed the highest total cost saving accounting to almost 45%</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' underline='true'>Order Status:</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000'>Gamma_Co has the lowest number of cancelled orders as compared to other suppliers.</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' underline='true'>Compliance</run>
+              <run fontcolor='#000000' underline='true'>:</run>
+              <run>Æ&#10;</run>
+              <run fontcolor='#000000'>Epsilon_Group had the highest compliance rate followed by Alpha_Inc with Delta_Logistics showing the least compliance</run>
+              <run>Æ&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+        </zone>
+        <zone h='38551' id='20' name='Defective units' w='43667' x='1200' y='7827'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='38435' id='21' name='Cost Savings' w='29867' x='45400' y='7827'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='7827' id='22' name='Cost Savings' pane-specification-id='0' param='[federated.0ri4c151al53er15hzl5v0mgednu].[sum:Calculation_1225260596268498946:qk]' type-v2='color' w='9333' x='65600' y='6893' />
+        <zone h='40654' id='23' name='Order Status' w='44133' x='733' y='47079'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='11449' id='24' name='Order Status' pane-specification-id='0' param='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Order_Status:nk]' type-v2='color' w='10533' x='35867' y='47547' />
+        <zone h='40654' id='25' name='Compliance' w='30000' x='45200' y='47079'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='17056' id='26' name='Compliance' pane-specification-id='0' param='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]' type-v2='color' w='12600' x='76333' y='7944' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98130' id='30' param='vert' type-v2='layout-flow' w='98934' x='533' y='935'>
+                <zone forceUpdate='true' h='100000' id='27' type-v2='text' w='76267' x='0' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='100000' id='29' type-v2='text' w='23733' x='76267' y='0'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' underline='true'>Quality:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000'>Delta_Logistics has the highest defect rate, posing a potential quality risk followed by Beta_supplies with Epsilon_Group and Alpha_Inc to be the lowest.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' underline='true'>Cost Savings:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000'>Beta_Supplies and Epsilon_Group contributed the highest total cost saving accounting to almost 45%</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' underline='true'>Order Status:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000'>Gamma_Co has the lowest number of cancelled orders as compared to other suppliers.</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' underline='true'>Compliance</run>
+                    <run fontcolor='#000000' underline='true'>:</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000'>Epsilon_Group had the highest compliance rate followed by Alpha_Inc with Delta_Logistics showing the least compliance</run>
+                    <run>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38551' id='20' is-fixed='true' name='Defective units' w='43667' x='1200' y='7827'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38435' id='21' is-fixed='true' name='Cost Savings' w='29867' x='45400' y='7827'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7827' id='22' name='Cost Savings' pane-specification-id='0' param='[federated.0ri4c151al53er15hzl5v0mgednu].[sum:Calculation_1225260596268498946:qk]' type-v2='color' w='9333' x='65600' y='6893'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40654' id='23' is-fixed='true' name='Order Status' w='44133' x='733' y='47079'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11449' id='24' name='Order Status' pane-specification-id='0' param='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Order_Status:nk]' type-v2='color' w='10533' x='35867' y='47547'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='40654' id='25' is-fixed='true' name='Compliance' w='30000' x='45200' y='47079'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='17056' id='26' name='Compliance' pane-specification-id='0' param='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]' type-v2='color' w='12600' x='76333' y='7944'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E2CB2C48-5026-4DF9-8A5B-81859E7C0D99}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Delivery time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9D0B1264-97CB-4BCD-8DBF-AA1F8C558C75}' />
+    </window>
+    <window class='worksheet' name='Defective units'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EB0EDDC1-95D0-4FFD-A436-457323C78037}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Cost Savings'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ri4c151al53er15hzl5v0mgednu].[sum:Calculation_1225260596268498946:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A09F120C-0A3B-4EDC-85AA-4025202670B5}' />
+    </window>
+    <window class='worksheet' name='Order Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Order_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D510D691-57FA-44D9-B4FE-6E9A7AD59958}' />
+    </window>
+    <window class='worksheet' name='Compliance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ri4c151al53er15hzl5v0mgednu].[none:Supplier:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{032C1CC9-ABEC-4A11-BB26-615110EAAE0A}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Compliance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Cost Savings' />
+        <viewpoint name='Defective units'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Order Status'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F9D9069C-D33F-4089-9EC4-CCD55484405A}' />
+    </window>
+  </windows>
+</workbook>
