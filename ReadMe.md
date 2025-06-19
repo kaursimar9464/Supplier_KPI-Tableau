@@ -24,7 +24,18 @@ The dashboard includes the following key visualizations:
   Allows interactive filtering of the entire dashboard by supplier.
 
 ---
+## How to Access the Dashboard
 
+You can explore the dashboard in two ways:
+
+### 1. **Open via Tableau Public**
+If the dashboard is published online:
+- Visit: [Tableau Public Link Here](https://public.tableau.com/app/profile/your-profile-name)  
+  *(Replace with actual link once uploaded)*
+
+### 2. **Open Locally via Tableau Desktop**
+- Download the file: `Procurement_KPI_Dashboard.twbx`
+- Open it using **Tableau Desktop** or **Tableau Public Desktop** 
 ## Key Insights
 
 - **Quality**  
